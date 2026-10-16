@@ -1,0 +1,129 @@
+{
+  "base": "b3b9fa29237514711469df3f8ee22e0f3aacb073",
+  "method": "Running Expo Web app in Chromium using the iPhone 13 device profile. 200-line prompt; synthetic machine in the client store; no session creation or backend request is exercised. visualViewport.height overridden to simulate the on-screen keyboard; screenshots crop the visible 390x340 CSS-pixel area. Not physical-device verification.",
+  "baseline": {
+    "base": "b3b9fa29",
+    "viewportSimulation": true,
+    "syntheticMachine": true,
+    "normal": {
+      "layoutHeight": 844,
+      "visibleHeight": 844,
+      "sendTop": 792,
+      "sendBottom": 824,
+      "inputHeight": 482,
+      "inputScrollHeight": 8820,
+      "sendDisabled": null
+    },
+    "keyboard": {
+      "layoutHeight": 844,
+      "visibleHeight": 340,
+      "sendTop": 792,
+      "sendBottom": 824,
+      "inputHeight": 482,
+      "inputScrollHeight": 8820,
+      "sendDisabled": null
+    }
+  },
+  "fixed": {
+    "base": "b3b9fa29",
+    "viewportSimulation": true,
+    "syntheticMachine": true,
+    "normal": {
+      "layoutHeight": 844,
+      "visibleHeight": 844,
+      "sendTop": 792,
+      "sendBottom": 824,
+      "inputHeight": 130,
+      "inputScrollHeight": 8820,
+      "sendDisabled": null
+    },
+    "keyboard": {
+      "layoutHeight": 844,
+      "visibleHeight": 340,
+      "sendTop": 288,
+      "sendBottom": 320,
+      "inputHeight": 130,
+      "inputScrollHeight": 8820,
+      "sendDisabled": null
+    },
+    "cases": [
+      {
+        "label": "visual viewport 340 / layout 844",
+        "layoutHeight": 844,
+        "visibleHeight": 340,
+        "sendTop": 288,
+        "sendBottom": 320,
+        "inputHeight": 130,
+        "inputScrollHeight": 8820,
+        "sendDisabled": null
+      },
+      {
+        "label": "visual viewport 300 / layout 844",
+        "layoutHeight": 844,
+        "visibleHeight": 300,
+        "sendTop": 248,
+        "sendBottom": 280,
+        "inputHeight": 86,
+        "inputScrollHeight": 8820,
+        "sendDisabled": null
+      },
+      {
+        "label": "keyboard closed / 844",
+        "layoutHeight": 844,
+        "visibleHeight": 844,
+        "sendTop": 792,
+        "sendBottom": 824,
+        "inputHeight": 130,
+        "inputScrollHeight": 8820,
+        "sendDisabled": null
+      },
+      {
+        "label": "both viewports resized to 300",
+        "layoutHeight": 300,
+        "visibleHeight": 300,
+        "sendTop": 248,
+        "sendBottom": 280,
+        "inputHeight": 86,
+        "inputScrollHeight": 8820,
+        "sendDisabled": null
+      },
+      {
+        "label": "landscape 844x390",
+        "layoutHeight": 390,
+        "visibleHeight": 390,
+        "sendTop": 338,
+        "sendBottom": 370,
+        "inputHeight": 174,
+        "inputScrollHeight": 4420,
+        "sendDisabled": null
+      },
+      {
+        "label": "desktop 1440x900",
+        "layoutHeight": 900,
+        "visibleHeight": 900,
+        "sendTop": 848,
+        "sendBottom": 880,
+        "inputHeight": 482,
+        "inputScrollHeight": 4420,
+        "sendDisabled": null
+      }
+    ]
+  },
+  "sidebar_cases": [
+    {
+      "width": 1440,
+      "height": 900,
+      "sendBottom": 714
+    },
+    {
+      "width": 1440,
+      "height": 390,
+      "sendBottom": 305
+    }
+  ],
+  "checks": {
+    "focused_tests": 23,
+    "typecheck": "passed"
+  },
+  "known_console_warning": "The existing React accessible=true non-boolean DOM attribute warning appears in both baseline and fixed builds."
+}
